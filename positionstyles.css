@@ -150,7 +150,11 @@
 /* Activity 6 styles */
 .content6 {
   display: grid;
-  grid-template-columns: repeat(6, 100px);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
 }
 .red6 {
   width: 100%;
